@@ -1,0 +1,4 @@
+Built-in image generation tool, background extraction from terafrontier-emblem.png. Original file preserved.
+
+Final prompt:
+Extract the gold emblem from the reference image as an actual RGBA PNG with transparent alpha channel. CRITICAL: the prior output was RGB with a painted checkerboard and was unusable. Do not paint any checkerboard, gray, white, black or navy background. The pixels outside the gold circular outline and the central vertical line must have alpha=0. Retain the warm gold illuminated crescent on the right, leave left interior fully transparent. Preserve original geometry and fine line weights. Only 8% empty transparent padding. This is a transparent logo asset, not a preview of transparency.

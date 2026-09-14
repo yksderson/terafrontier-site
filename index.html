@@ -9,38 +9,39 @@
   <meta property="og:title" content="TeraFrontier">
   <meta property="og:description" content="Energy. Intelligence. Infrastructure.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="assets/terafrontier-emblem.png">
+  <link rel="icon" href="assets/terafrontier-emblem-96.jpg">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body><a class="skip-link" href="#top">Skip to content</a>
   <header class="nav">
     <a class="brand" href="#top" aria-label="TeraFrontier home">
-      <img src="assets/terafrontier-emblem.png" alt="">
+      <span class="brand-mark" aria-hidden="true"></span>
       <span>TERAFRONTIER</span>
     </a>
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="#research">Research</a>
       <a href="#frontier">Frontier</a>
       <a href="#about">About</a>
-      <a class="nav-cta" href="#subscribe">Subscribe</a>
+      <a class="nav-cta" href="#subscribe">Publication</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero">
+  <main id="top" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-art" aria-hidden="true"></div>
+      <img class="hero-emblem" src="assets/terafrontier-emblem-web.png" width="640" height="640" alt="">
       <div class="hero-content">
         <p class="eyebrow">ENERGY · INTELLIGENCE · INFRASTRUCTURE</p>
-        <h1>The physical frontier<br>of intelligence.</h1>
+        <h1 id="hero-title">The physical frontier<br>of intelligence.</h1>
         <p class="lede">
           TeraFrontier explores the energy, compute and infrastructure systems
           behind AI, robotics and the next wave of industrial growth.
         </p>
         <div class="actions">
           <a class="button primary" href="#research">Explore research</a>
-          <a class="button ghost" href="#subscribe">Subscribe</a>
+          
         </div>
-      </div>
+      </div><div class="hero-foot"><span>Independent research &amp; publishing</span><a href="#frontier">Explore the frontier <span aria-hidden="true">↓</span></a></div>
     </section>
 
     <section id="research" class="section">
@@ -49,20 +50,20 @@
         <div>
           <h2>Research from the physical layer.</h2>
         </div>
-        <div class="feature">
+        <article class="feature" aria-labelledby="essay-title">
           <p class="kicker">FIRST ESSAY</p>
-          <h3>AI is becoming a power infrastructure problem.</h3>
+          <h3 id="essay-title">AI is becoming a power infrastructure problem.</h3>
           <p>
             A first-principles look at the systems required to scale compute:
             power generation, grids, land, data centers and capital.
           </p>
           <span class="coming">Coming soon</span>
-        </div>
+        </article>
       </div>
     </section>
 
     <section id="frontier" class="section frontier">
-      <div class="section-label">02 / THE FRONTIER</div>
+      <div class="section-label">02 / THE FRONTIER</div><h2 class="frontier-title">Four systems. One frontier.</h2>
       <div class="pillars">
         <article>
           <span>ENERGY</span>
@@ -105,17 +106,26 @@
     </section>
 
     <section id="subscribe" class="subscribe">
-      <img src="assets/terafrontier-emblem.png" alt="" class="subscribe-mark">
+      <span class="subscribe-mark gold-mark" aria-hidden="true"></span>
       <p class="eyebrow">STAY ON THE FRONTIER</p>
       <h2>New research, without the noise.</h2>
       <p>Long-form analysis on energy, AI infrastructure, robotics and frontier systems.</p>
-      <a class="button primary" href="#" aria-label="Substack link placeholder">Substack coming soon</a>
+      <a class="button subscribe-link" href="https://terafrontier.substack.com/">Subscribe on Substack</a>
     </section>
   </main>
 
   <footer>
     <span>© TeraFrontier</span>
-    <span>Energy · Intelligence · Infrastructure</span>
+    <nav class="social-links" aria-label="TeraFrontier on other platforms">
+      <a href="https://terafrontier.substack.com/">Substack</a>
+      <a href="https://x.com/terafrontier">X</a>
+      <a href="https://www.linkedin.com/company/terafrontier/">LinkedIn</a>
+      <a href="https://www.instagram.com/terafrontier">Instagram</a>
+    </nav>
   </footer>
 </body>
 </html>
+
+
+
+
