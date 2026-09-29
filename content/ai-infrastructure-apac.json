@@ -1,0 +1,96 @@
+{
+  "slug": "ai-infrastructure-apac",
+  "author": "Benoit Dubeau",
+  "description": "How power availability, customer workloads and delivery risk are reshaping AI infrastructure development across Asia-Pacific.",
+  "status": "published",
+  "published": "2026-09-30",
+  "revisions": [],
+  "sources": [
+    {
+      "publisher": "International Energy Agency",
+      "title": "Key Questions on Energy and AI: Executive summary",
+      "date": "2026",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+    },
+    {
+      "publisher": "Amazon",
+      "title": "Andy Jassy’s 2025 Letter to Shareholders",
+      "date": "2026",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-2025-letter-to-shareholders"
+    },
+    {
+      "publisher": "International Energy Agency",
+      "title": "Electricity 2026: Grids",
+      "date": "2026",
+      "url": "https://www.iea.org/reports/electricity-2026/grids"
+    },
+    {
+      "publisher": "South Korean industry ministry",
+      "title": "Clarification on metropolitan data centers and power-system impact assessments",
+      "date": "14 August 2025",
+      "note": "Korean-language source; title summarized in English.",
+      "url": "https://m.korea.kr/briefing/actuallyView.do?newsId=148962627"
+    },
+    {
+      "publisher": "Thai government",
+      "title": "Four-part data center screening framework and electricity and water costs",
+      "date": "10 August 2026",
+      "note": "Thai-language source; title summarized in English.",
+      "url": "https://www.thaigov.go.th/th/news/167442"
+    },
+    {
+      "publisher": "Prime Minister’s Office, Malaysia",
+      "title": "Parliamentary question-time response",
+      "date": "24 February 2026",
+      "note": "Malay-language transcript.",
+      "url": "https://www.pmo.gov.my/ms/jawapan-parlimen/teks-verbatim-jawapan-yab-perdana-menteri-semasa-sesi-pmqt-24-februari-2026-dan-soalan-satu-dan-soalan-tambahan/"
+    },
+    {
+      "publisher": "MIDA",
+      "title": "Malaysia Secures RM218.5 Billion in Approved Investments in 1H 2026",
+      "date": "2026",
+      "url": "https://www.mida.gov.my/media-release/malaysia-secures-rm218-5-billion-in-approved-investments-in-1h-2026-with-domestic-investment-in-manufacturing-up-23/"
+    },
+    {
+      "publisher": "International Energy Agency",
+      "title": "Energy and AI",
+      "date": "2025",
+      "note": "Pages 96–97 on siting; pages 32–33 on workload characteristics. PDF.",
+      "url": "https://iea.blob.core.windows.net/assets/b3a8b37f-32d1-4873-9eca-31cec5895264/EnergyandAI.pdf#page=97"
+    },
+    {
+      "publisher": "AWS",
+      "title": "Availability Zones: AWS Fault Isolation Boundaries",
+      "date": "Public technical documentation",
+      "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/availability-zones.html"
+    },
+    {
+      "publisher": "Google",
+      "title": "A new milestone for smart, affordable electricity growth",
+      "date": "19 March 2026",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/demand-response-data-center-milestone/"
+    },
+    {
+      "publisher": "Tenaga Nasional Berhad",
+      "title": "Green Lane Pathway and grid infrastructure update",
+      "date": "2026",
+      "note": "Official TNB LinkedIn update; project count as of March 2026.",
+      "url": "https://www.linkedin.com/posts/tenaga-nasional-berhad_malaysias-data-centre-growth-is-accelerating-activity-7463045915700989952-bO3S"
+    },
+    {
+      "publisher": "Transgrid",
+      "title": "New transmission capacity in Sydney to be funded by data centres",
+      "date": "26 August 2026",
+      "url": "https://www.transgrid.com.au/media-publications/news-articles/new-transmission-capacity-in-sydney-to-be-funded-by-data-centres"
+    },
+    {
+      "publisher": "Bloom Energy",
+      "title": "Bloom Energy and Oracle Expand Strategic Partnership to Deploy up to 2.8 GW",
+      "date": "April 2026",
+      "note": "Supplier announcement describing a system deployed in 2025.",
+      "url": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-and-Oracle-Expand-Strategic-Partnership-to-Deploy-up-to-2-8-GW-to-Accelerate-AI-Infrastructure-Build-Out/default.aspx"
+    }
+  ],
+  "series": "ESSAY 01",
+  "topic": "ENERGY & COMPUTE"
+}
