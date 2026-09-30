@@ -1,74 +1,135 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Infrastructure in APAC: The Race for Deliverable Power | TeraFrontier</title><meta name="description" content="How power availability, customer workloads and delivery risk are reshaping AI infrastructure development across Asia-Pacific.">
+<title>AI Infrastructure in APAC: The Race for Deliverable Power
+ | TeraFrontier</title><meta name="description" content="How power availability, customer workloads and delivery risk are reshaping AI infrastructure development across Asia-Pacific.">
 <link rel="canonical" href="https://terafrontier.com/research/ai-infrastructure-apac/">
-<meta name="theme-color" content="#040c18"><meta property="og:title" content="AI Infrastructure in APAC: The Race for Deliverable Power"><meta property="og:description" content="How power availability, customer workloads and delivery risk are reshaping AI infrastructure development across Asia-Pacific."><meta property="og:type" content="article"><meta name="author" content="Benoit Dubeau">
+<meta name="theme-color" content="#040c18"><meta property="og:title" content="AI Infrastructure in APAC: The Race for Deliverable Power
+"><meta property="og:description" content="How power availability, customer workloads and delivery risk are reshaping AI infrastructure development across Asia-Pacific."><meta property="og:type" content="article"><meta name="author" content="Benoit Dubeau">
 <meta property="article:published_time" content="2026-09-30T00:00:00+08:00"><meta property="article:modified_time" content="2026-09-30T00:00:00+08:00"><meta property="og:url" content="https://terafrontier.com/research/ai-infrastructure-apac/">
 <link rel="icon" href="../../assets/terafrontier-emblem-96.jpg"><link rel="stylesheet" href="../../styles.css"><link rel="stylesheet" href="../../article.css"></head>
 <body class="article-page"><a class="skip-link" href="#article-body">Skip to article</a>
 <header class="nav"><a class="brand" href="../../" aria-label="TeraFrontier home"><span class="brand-mark" aria-hidden="true"></span><span>TERAFRONTIER</span></a><nav aria-label="Main navigation"><a href="../">Research</a><a href="../../#about">About</a><a class="nav-cta" href="https://terafrontier.substack.com/">Subscribe</a></nav></header>
-<main><article aria-labelledby="article-title"><header class="article-header"><a class="back-link" href="../">← All research</a><p class="eyebrow">ESSAY 01 / ENERGY &amp; COMPUTE</p><h1 id="article-title">AI Infrastructure in APAC: The Race for Deliverable Power</h1><p class="article-deck">How power availability, customer workloads and delivery risk are reshaping AI infrastructure development across Asia-Pacific.</p><div class="article-meta"><span>By Benoit Dubeau</span><span>Published <time datetime="2026-09-30">30 September 2026</time></span><span>9 min read</span></div></header>
-<div class="reading-layout"><aside class="contents" aria-label="Article contents"><p class="eyebrow">IN THIS ESSAY</p><ol><li><a href="#demand-is-running-ahead-of-capacity">Demand is running ahead of capacity</a></li><li><a href="#power-is-changing-the-location-decision">Power is changing the location decision</a></li><li><a href="#customers-determine-how-far-compute-can-move">Customers determine how far compute can move</a></li><li><a href="#three-routes-to-earlier-power">Three routes to earlier power</a></li><li><a href="#does-the-solution-deliver-the-time-it-promises">Does the solution deliver the time it promises?</a></li><li><a href="#what-makes-a-project-credible">What makes a project credible?</a></li><li><a href="#sources">Sources</a></li></ol></aside><div class="article-body" id="article-body" tabindex="-1"><p>Demand is there. The harder question is how quickly the infrastructure can be delivered to serve it.</p>
-<p>Across Asia-Pacific, power is becoming a deciding factor in where data centers can grow, when they can open and what developers must commit to make them viable. Land, fiber, water and proximity to customers still matter. But a location that works on all those measures may still be unusable within the customer’s timeline if electricity cannot reach it.</p>
-<p>Power has always mattered to data centers. What changes in a constrained market is the development decision. Operators may have to move beyond their preferred locations, help fund grid upgrades or arrange dedicated generation. Each route changes the project’s cost, risks and ability to serve different customers.</p>
-<p>My view is that the next stage of AI infrastructure development in APAC will increasingly depend on managing these choices. Securing megawatts is part of the job. Turning them into reliable, operating compute on a credible schedule is what creates value.</p>
-<h2 id="demand-is-running-ahead-of-capacity" tabindex="-1">Demand is running ahead of capacity</h2>
-<p>The scale of electricity demand is already changing. The International Energy Agency reports that global data center electricity demand grew by 17% in 2025, while demand from AI-focused data centers grew by 50%. <sup><a class="reference" role="doc-noteref" id="ref-1-1" href="#source-1" aria-label="Source 1: International Energy Agency">[1]</a></sup></p>
-<p>Public operator disclosures show the commercial pressure behind that growth. In its 2025 shareholder letter, Amazon reported that AWS added 3.9 GW of power capacity during the year and was monetizing capacity as quickly as it was installed. It also reported unserved demand because of capacity constraints. <sup><a class="reference" role="doc-noteref" id="ref-2-1" href="#source-2" aria-label="Source 2: Amazon">[2]</a></sup></p>
-<p>These figures describe global demand and one operator’s business, rather than every APAC market. They also cover an industry serving both AI and broader cloud workloads. But they help explain why speed matters.</p>
-<p>Where customers are waiting and the rest of the facility is ready, bringing power forward can bring revenue forward. A lower electricity price several years from now may be less attractive than a workable supply available sooner.</p>
-<p>That does not make every expensive power solution a good investment. It means the cost of waiting belongs in the comparison.</p>
-<h2 id="power-is-changing-the-location-decision" tabindex="-1">Power is changing the location decision</h2>
-<p>Expanding around an established location has advantages. Customers, networks, suppliers and operating teams may already be there. Moving farther away can mean rebuilding some of those advantages.</p>
-<p>The difficulty is that electricity infrastructure runs on a different timetable. The IEA estimates that planning, permitting and completing new grid infrastructure can take 5–15 years, compared with 1–3 years for data centers. Those are broad development timelines, not a forecast for every connection, but the mismatch matters when a project depends on major network works. <sup><a class="reference" role="doc-noteref" id="ref-3-1" href="#source-3" aria-label="Source 3: International Energy Agency">[3]</a></sup></p>
-<p>Policy is also changing where and under what conditions growth can happen.</p>
-<p>In South Korea, the Special Act on the Promotion of Distributed Energy introduced power-system impact assessments for large electricity users. The framework examines whether the grid can accommodate new demand and encourages development outside the Seoul metropolitan area. The practical issue for developers is whether their proposed location can pass that assessment and secure supply. <sup><a class="reference" role="doc-noteref" id="ref-4-1" href="#source-4" aria-label="Source 4: South Korean industry ministry">[4]</a></sup></p>
-<p>Thailand is revising how it screens and supplies data center projects. In August 2026, the government described stronger screening based on economic benefits, power and water availability, and environmental impacts. It also reported approval of a separate electricity-user category for data centers so tariffs could reflect the cost of serving them, alongside financial guarantees for electricity applications. Detailed screening and location criteria were still being developed. <sup><a class="reference" role="doc-noteref" id="ref-5-1" href="#source-5" aria-label="Source 5: Thai government">[5]</a></sup></p>
-<p>Malaysia is becoming more selective too. In February 2026, the prime minister said the country had restricted new data center investments unrelated to AI because of rising power and water consumption. MIDA subsequently described a task-force process that approves projects with secured power and water and demonstrated environmental compliance. <sup><a class="reference" role="doc-noteref" id="ref-6-1" href="#source-6" aria-label="Source 6: Prime Minister’s Office, Malaysia">[6]</a></sup> <sup><a class="reference" role="doc-noteref" id="ref-7-1" href="#source-7" aria-label="Source 7: MIDA">[7]</a></sup></p>
-<p>These are different policy responses. They should not be treated as a single regional moratorium. Their common thread is that governments are taking a more active role in deciding which projects infrastructure can support, where they should go and how their costs should be covered.</p>
-<p>For developers, those decisions belong near the beginning of site selection.</p>
-<h2 id="customers-determine-how-far-compute-can-move" tabindex="-1">Customers determine how far compute can move</h2>
-<p>Moving toward available power sounds straightforward. Whether it works depends on what the customer needs the facility to do.</p>
-<p>AI training is the process of building or improving a model. Inference is using that model to produce an answer, prediction or action. Their location requirements can differ, and inference itself includes applications with very different response-time needs.</p>
-<p>The IEA identifies training and some types of inference as less sensitive to latency than traditional workloads, giving them more location flexibility. Connectivity and data-sovereignty requirements still constrain the choice. <sup><a class="reference" role="doc-noteref" id="ref-8-1" href="#source-8" aria-label="Source 8: International Energy Agency">[8]</a></sup></p>
-<p>Latency is the delay in communication between systems. It matters both between a user and an application and between facilities that need to exchange or synchronize data. AWS, for example, describes its Availability Zones as sufficiently close to support synchronous replication with single-digit millisecond latency. This illustrates the networking requirements of interconnected facilities, rather than a universal limit for data center locations. <sup><a class="reference" role="doc-noteref" id="ref-9-1" href="#source-9" aria-label="Source 9: AWS">[9]</a></sup></p>
-<p>Training may allow an entire cluster to sit farther from end users. The machines within that cluster still need fast, high-capacity connections to one another. Freedom to move the cluster does not mean the equipment can be spread anywhere.</p>
-<p>There is also a longer-term investment question: what else should the facility be able to support?</p>
-<p>This is workload fungibility: how readily capacity can serve different workloads or customers. A location suited to training may offer fewer options for latency-sensitive inference or other cloud services. Location, connectivity and facility design all affect that flexibility.</p>
-<p>Flexibility can also involve when work runs. In March 2026, Google reported incorporating 1 GW of demand-response capacity into long-term contracts with US utilities. The arrangements allow it to limit or shift some machine-learning workloads during periods of grid pressure and can support faster connections. The figure describes contracted flexibility, rather than proof that 1 GW had already been curtailed. <sup><a class="reference" role="doc-noteref" id="ref-10-1" href="#source-10" aria-label="Source 10: Google">[10]</a></sup></p>
-<p>The lesson for APAC is to start with the workload. How far it can move, when it must run and what other uses the facility should support will shape the power options worth pursuing.</p>
-<h2 id="three-routes-to-earlier-power" tabindex="-1">Three routes to earlier power</h2>
-<p>Developers facing a constrained location have three broad routes. They can combine them, and the best answer will vary by market and project.</p>
-<h3 id="work-with-the-utility-and-grid-operator" tabindex="-1">Work with the utility and grid operator</h3>
-<p>Early utility engagement can reveal whether the constraint sits in the connection process, a local substation or the wider network. Those problems require different solutions.</p>
-<p>Malaysia’s TNB offers an example of improving the delivery process. In a 2026 update, it reported that its Green Lane Pathway had reduced data center connection timelines from 36 months to as little as 12 months, with 33 projects delivered under the framework as of March. These are electricity-connection figures, not full data center commissioning timelines, and 12 months is not a guarantee for every project. <sup><a class="reference" role="doc-noteref" id="ref-11-1" href="#source-11" aria-label="Source 11: Tenaga Nasional Berhad">[11]</a></sup></p>
-<p>In Australia, Transgrid announced proposed network upgrades in August 2026 that could support up to 2 GW of additional data center demand in Sydney. Its approach requires developers to fund infrastructure, including works beyond their own connection, with capacity allocated against signed agreements and funding commitments. The upgrades remain proposed, but the commercial implication is clear: securing additional grid capacity can require developers to help finance its delivery. <sup><a class="reference" role="doc-noteref" id="ref-12-1" href="#source-12" aria-label="Source 12: Transgrid">[12]</a></sup></p>
-<p>These examples show two ways to work with utilities: improve the connection process and help fund the infrastructure needed to serve new demand. A project may need both.</p>
-<h3 id="move-toward-available-capacity" tabindex="-1">Move toward available capacity</h3>
-<p>Another location may offer earlier access to power, lower electricity costs, or both.</p>
-<p>The comparison needs to cover the whole site. Fiber routes, customer latency requirements, water, land approvals and construction readiness may offset the power advantage. A location with electricity available sooner is useful only if the facility can be completed and serve the intended workload sooner.</p>
-<p>For a flexible training workload, moving farther away may make sense. For a facility serving customers tied to an existing metro, paying more to remain nearby may be justified.</p>
-<h3 id="arrange-dedicated-generation" tabindex="-1">Arrange dedicated generation</h3>
-<p>Dedicated generation gives developers another way to address timing, cost and control over supply.</p>
-<p>Some technologies can be deployed quickly under the right conditions. Bloom Energy reported that it delivered a fully operational fuel-cell system to Oracle in 55 days in 2025. That is a supplier-reported system deployment, not the development timeline for an entire data center, but it helps explain the interest in modular power solutions. <sup><a class="reference" role="doc-noteref" id="ref-13-1" href="#source-13" aria-label="Source 13: Bloom Energy">[13]</a></sup></p>
-<p>Developers still need to establish fuel availability, equipment delivery, permitting and maintenance. Power reliability and redundancy are central to the design. The facility must remain supplied during planned maintenance and unexpected outages, using an appropriate combination of spare generation, backup systems, storage or grid support.</p>
-<p>Those arrangements affect the cost and schedule. The solution also needs to fit the operator’s emissions commitments.</p>
-<p>The comparison therefore needs to include the complete power system and its operating obligations. A generator’s headline electricity cost or delivery date is only part of the answer.</p>
-<h2 id="does-the-solution-deliver-the-time-it-promises" tabindex="-1">Does the solution deliver the time it promises?</h2>
-<p>The commercial question is whether a power solution allows the project to begin serving customers earlier, at a cost and risk the investment can support.</p>
-<p>Consider a hypothetical project with a grid connection expected in four years and dedicated generation proposed in two. Paying a premium for generation could be worthwhile if it enables two additional years of operation.</p>
-<p>But the two-year schedule may depend on permits, equipment, fuel infrastructure and financing. If one of those slips, the developer can end up paying for land, a building and equipment while waiting for the power needed to earn revenue.</p>
-<p>The value of the faster route depends on how credible that route is.</p>
-<p>This calls for more than comparing dates in proposals. Developers need to understand which milestones are secured, which depend on other parties and where a delay would affect the rest of the project. Installation, testing and permission to operate all belong in the schedule.</p>
-<p>The duration of the commitment matters too. A power premium paid for two years has different economics from a premium locked in for twenty. Minimum payments, termination costs and obligations for fuel or network infrastructure can outlast the original reason for choosing the solution.</p>
-<p>That is especially important for bridge power intended to operate until a grid connection arrives. The plan should explain what happens afterward: whether equipment can be redeployed, retained for backup or retired, and which contractual costs remain.</p>
-<p>Developers will rarely have complete certainty before committing. Waiting for every uncertainty to disappear can also cost time. The task is to take calculated risks, with a clear understanding of the dependencies and the consequences if delivery slips.</p>
-<h2 id="what-makes-a-project-credible" tabindex="-1">What makes a project credible?</h2>
-<p>APAC’s markets will continue to respond differently. Some will improve connection processes. Others will ask developers to fund upgrades, steer demand toward different locations or place tighter conditions on approvals.</p>
-<p>That makes the power-delivery plan a core part of the investment case.</p>
-<p>A credible plan connects the customer’s workload to a suitable location, a realistic schedule, a reliable supply design and the full cost of delivery. It also makes clear who is responsible for the unresolved steps.</p>
-<p>This is where I think the competitive difference will increasingly lie. Developers and operators that can coordinate customers, utilities, land, generation and approvals will be better placed to turn demand into operating capacity.</p>
-<p>Demand provides the reason to move quickly. The quality of the power-delivery plan determines whether that speed can be achieved.</p>
+<main><article aria-labelledby="article-title"><header class="article-header"><a class="back-link" href="../">← All research</a><p class="eyebrow">ESSAY 01 / ENERGY &amp; COMPUTE</p><h1 id="article-title">AI Infrastructure in APAC: The Race for Deliverable Power
+</h1><p class="article-deck">How power availability, customer workloads and delivery risk are reshaping AI infrastructure development across Asia-Pacific.</p><div class="article-meta"><span>By Benoit Dubeau</span><span>Published <time datetime="2026-09-30">30 September 2026</time></span><span>10 min read</span></div></header>
+<div class="reading-layout"><aside class="contents" aria-label="Article contents"><p class="eyebrow">IN THIS ESSAY</p><ol><li><a href="#sources">Sources</a></li></ol></aside><div class="article-body" id="article-body" tabindex="-1"><p>Demand is there. The harder question is how quickly the infrastructure can be delivered to serve it.
+</p>
+<p>Across Asia-Pacific, power is becoming a deciding factor in where data centers can grow, when they can come online and what companies must commit to make them viable. Land, fiber, water and proximity to customers still matter. But a location that works on all those measures may still be unusable within the customer’s timeline if electricity cannot reach it.
+</p>
+<p>Power has always mattered to data centers. What changes in a constrained market is the development decision. Hyperscalers and colocation providers may have to move beyond their preferred locations, help fund grid upgrades or arrange dedicated generation. Each route changes the project’s cost, risks and ability to serve different customers.
+</p>
+<p>My view is that the next stage of AI infrastructure development in APAC will increasingly depend on managing these choices. Securing megawatts is part of the job. Turning them into reliable, operating compute on a credible schedule is what creates value.
+</p>
+<p>## Demand is running ahead of capacity
+</p>
+<p>The scale of electricity demand is already changing. The International Energy Agency reports that global data center electricity demand grew by 17% in 2025, while demand from AI-focused data centers grew by 50%. <sup><a class="reference" role="doc-noteref" id="ref-1-1" href="#source-1" aria-label="Source 1: International Energy Agency">[1]</a></sup>
+</p>
+<p>Public company disclosures show the commercial pressure behind that growth. In its 2025 shareholder letter, Amazon reported that AWS added 3.9 GW of power capacity during the year and was monetizing capacity as quickly as it was installed. It also reported unserved demand because of capacity constraints. <sup><a class="reference" role="doc-noteref" id="ref-2-1" href="#source-2" aria-label="Source 2: Amazon">[2]</a></sup>
+</p>
+<p>These global figures cover both AI and broader cloud demand. Conditions vary across APAC, but where customers are waiting for capacity, the pressure to deliver is immediate.
+</p>
+<p>Where customers are waiting and the rest of the facility is ready, bringing power forward can bring revenue forward. It can also help secure customers who might otherwise choose a competitor with capacity available sooner. A lower electricity price several years from now may be less attractive than a workable supply available sooner.
+</p>
+<p>That does not make every expensive power solution a good investment. It means the cost of waiting belongs in the comparison.
+</p>
+<p>## Power is changing the location decision
+</p>
+<p>Expanding around an established location has advantages. Customers, networks, suppliers and operating teams may already be there. Moving farther away can mean rebuilding some of those advantages.
+</p>
+<p>The difficulty is that electricity infrastructure runs on a different timetable. The IEA estimates that planning, permitting and completing new grid infrastructure can take 5–15 years, compared with 1–3 years for data centers. Those are broad development timelines, not a forecast for every connection, but the mismatch matters when a project depends on major network works. <sup><a class="reference" role="doc-noteref" id="ref-3-1" href="#source-3" aria-label="Source 3: International Energy Agency">[3]</a></sup>
+</p>
+<p>Policy is also changing where and under what conditions growth can happen.
+</p>
+<p>In South Korea, the Special Act on the Promotion of Distributed Energy introduced power-system impact assessments for large electricity users. The assessment considers both grid capacity and the project’s wider local impact, and is intended to steer large electricity users outside the Seoul metropolitan area. For a project seeking to remain near Seoul, securing land does not establish that electricity supply will be approved. Some metropolitan projects have passed assessment, so the framework should not be described as a blanket ban. <sup><a class="reference" role="doc-noteref" id="ref-4-1" href="#source-4" aria-label="Source 4: South Korean industry ministry">[4]</a></sup>
+</p>
+<p>Thailand is revising how it screens and supplies data center projects. In August 2026, the government described stronger screening based on economic benefits, power and water availability, and environmental impacts. It also reported approval of a separate electricity-user category for data centers so tariffs could reflect the cost of serving them, alongside financial guarantees for electricity applications. Detailed screening and location criteria were still being developed. <sup><a class="reference" role="doc-noteref" id="ref-5-1" href="#source-5" aria-label="Source 5: Thai government">[5]</a></sup>
+</p>
+<p>Malaysia is becoming more selective too. In February 2026, the prime minister said the country had restricted new data center investments unrelated to AI because of rising power and water consumption. MIDA subsequently described a task-force process that approves projects with secured power and water and demonstrated environmental compliance. <sup><a class="reference" role="doc-noteref" id="ref-6-1" href="#source-6" aria-label="Source 6: Prime Minister’s Office, Malaysia">[6]</a></sup> <sup><a class="reference" role="doc-noteref" id="ref-7-1" href="#source-7" aria-label="Source 7: MIDA">[7]</a></sup>
+</p>
+<p>Across these markets, governments are taking a more active role in deciding which projects infrastructure can support, where they should go and how their costs should be covered.
+</p>
+<p>For companies planning new capacity, those decisions belong near the beginning of site selection.
+</p>
+<p>## Customers determine how far compute can move
+</p>
+<p>Moving toward available power sounds straightforward. Whether it works depends on what the customer needs the facility to do.
+</p>
+<p>AI training is the process of building or improving a model. Inference is using that model to produce an answer, prediction or action. Their location requirements can differ, and inference itself includes applications with very different response-time needs.
+</p>
+<p>The IEA identifies training and some types of inference as less sensitive to latency than traditional workloads, giving them more location flexibility. Connectivity and data-sovereignty requirements still constrain the choice. <sup><a class="reference" role="doc-noteref" id="ref-8-1" href="#source-8" aria-label="Source 8: International Energy Agency">[8]</a></sup>
+</p>
+<p>Latency is the delay in communication between systems. It matters both between a user and an application and between facilities that need to exchange or synchronize data. AWS, for example, describes its Availability Zones as sufficiently close to support synchronous replication with single-digit millisecond latency. This illustrates the networking requirements of interconnected facilities, rather than a universal limit for data center locations. <sup><a class="reference" role="doc-noteref" id="ref-9-1" href="#source-9" aria-label="Source 9: AWS">[9]</a></sup>
+</p>
+<p>Training may allow an entire cluster to sit farther from end users. The machines within that cluster still need fast, high-capacity connections to one another. Freedom to move the cluster does not mean the equipment can be spread anywhere.
+</p>
+<p>There is also a longer-term investment question: what else should the facility be able to support?
+</p>
+<p>This is workload fungibility: how readily capacity can serve different workloads or customers. A location suited to training may offer fewer options for latency-sensitive inference or other cloud services. Location, connectivity and facility design all affect that flexibility.
+</p>
+<p>Flexibility can also involve when work runs. In March 2026, Google reported incorporating 1 GW of demand-response capacity into long-term contracts with US utilities. The arrangements allow it to limit or shift some machine-learning workloads during periods of grid pressure and can support faster connections. The figure describes contracted flexibility, rather than proof that 1 GW had already been curtailed. <sup><a class="reference" role="doc-noteref" id="ref-10-1" href="#source-10" aria-label="Source 10: Google">[10]</a></sup>
+</p>
+<p>The lesson for APAC is to start with the workload. How far it can move, when it must run and what other uses the facility should support will shape the power options worth pursuing.
+</p>
+<p>## Three routes to earlier power
+</p>
+<p>Companies developing data centers in a constrained location have three broad routes. They can combine them, and the best answer will vary by market and project.
+</p>
+<p>### Work with the utility and grid operator
+</p>
+<p>Early utility engagement can reveal whether the constraint sits in the connection process, a local substation or the wider network. Those problems require different solutions.
+</p>
+<p>Malaysia’s TNB offers an example of improving the delivery process. In a 2026 update, it reported that its Green Lane Pathway had reduced data center connection timelines from 36 months to as little as 12 months, with 33 projects delivered under the framework as of March. These are electricity-connection figures, not full data center commissioning timelines, and 12 months is not a guarantee for every project. <sup><a class="reference" role="doc-noteref" id="ref-11-1" href="#source-11" aria-label="Source 11: Tenaga Nasional Berhad">[11]</a></sup>
+</p>
+<p>In Australia, Transgrid announced proposed network upgrades in August 2026 that could support up to 2 GW of additional data center demand in Sydney. Its approach requires participating data center companies to fund infrastructure, including works beyond their own connection, with capacity allocated against signed agreements and funding commitments. The upgrades remain proposed, but the commercial implication is clear: securing additional grid capacity can require the companies seeking that capacity to help finance its delivery. <sup><a class="reference" role="doc-noteref" id="ref-12-1" href="#source-12" aria-label="Source 12: Transgrid">[12]</a></sup>
+</p>
+<p>These examples show two ways to work with utilities: improve the connection process and help fund the infrastructure needed to serve new demand. A project may need both.
+</p>
+<p>### Move toward available capacity
+</p>
+<p>Another location may offer earlier access to power, lower electricity costs, or both.
+</p>
+<p>The comparison needs to cover the whole site. Fiber routes, customer latency requirements, water, land approvals and construction readiness may offset the power advantage. A location with electricity available sooner is useful only if the facility can be completed and serve the intended workload sooner.
+</p>
+<p>For a flexible training workload, moving farther away may make sense. For a facility serving customers tied to an existing metro, paying more to remain nearby may be justified.
+</p>
+<p>### Arrange dedicated generation
+</p>
+<p>Dedicated generation provides another way to address timing, cost and control over supply.
+</p>
+<p>Some technologies can be deployed quickly under the right conditions. Bloom Energy reported that it delivered a fully operational fuel-cell system to Oracle in 55 days in 2025. That is a supplier-reported system deployment, not the development timeline for an entire data center, but it helps explain the interest in modular power solutions. <sup><a class="reference" role="doc-noteref" id="ref-13-1" href="#source-13" aria-label="Source 13: Bloom Energy">[13]</a></sup>
+</p>
+<p>The project team still needs to establish fuel availability, equipment delivery, permitting and maintenance. Power reliability and redundancy are central to the design. The facility must remain supplied during planned maintenance and unexpected outages, using an appropriate combination of spare generation, backup systems, storage or grid support.
+</p>
+<p>Those arrangements affect the cost and schedule. The solution also needs to fit the operator’s emissions commitments.
+</p>
+<p>The comparison therefore needs to include the complete power system and its operating obligations. A generator’s headline electricity cost or delivery date is only part of the answer.
+</p>
+<p>## Does the solution deliver the time it promises?
+</p>
+<p>The commercial question is whether a power solution allows the project to begin serving customers earlier, at a cost and risk the investment can support.
+</p>
+<p>Consider a hypothetical project with a grid connection expected in four years and dedicated generation proposed in two. Paying a premium for generation could be worthwhile if it enables two additional years of revenue and secures a customer who cannot wait for the grid connection.
+</p>
+<p>But the two-year schedule may depend on permits, equipment, fuel infrastructure and financing. If one of those slips, the company can end up paying for land, a building and equipment while waiting for the power needed to earn revenue.
+</p>
+<p>Construction deserves the same scrutiny. The team should test whether phased delivery or overlapping activities could bring the first usable capacity online sooner. Accelerating the building helps only if power, cooling, connectivity and commissioning are ready for that first phase.
+</p>
+<p>Compare what sits behind each proposed date: whether permits are issued, equipment delivery slots are secured, fuel infrastructure is funded and the connection works have an agreed schedule. Then identify which unfinished step could delay first revenue, who controls it and what the fallback would be.
+</p>
+<p>The duration of the commitment matters too. A power premium paid for two years has different economics from a premium locked in for twenty. Minimum payments, termination costs and obligations for fuel or network infrastructure can outlast the original reason for choosing the solution.
+</p>
+<p>That is especially important for bridge power intended to operate until a grid connection arrives. The plan should explain what happens afterward: whether equipment can be redeployed, retained for backup or retired, and which contractual costs remain.
+</p>
+<p>Companies will rarely have complete certainty before committing. A useful discipline is to tie larger commitments to evidence that the schedule is becoming achievable. For example, a team might reserve equipment before every approval is complete, while making further spending conditional on a key permit or a firm fuel-supply agreement. The cost of preserving that option belongs alongside the cost of waiting.
+</p>
+<p>## What makes a project credible?
+</p>
+<p>APAC’s markets will continue to respond differently. Some will improve connection processes. Others will ask developers to fund upgrades, steer demand toward different locations or place tighter conditions on approvals.
+</p>
+<p>The investment case should explain when the first customer can be served, what must happen before that date and what remains payable if the schedule slips. It should also show whether the location can support other workloads and how the power arrangement changes once a grid connection becomes available.
+</p>
+<p>My view is that this coordination will increasingly separate projects that announce capacity from those that deliver it. A hyperscaler building its own campus and a colocation provider building for tenants face different commercial arrangements, but both need the customer commitment, site readiness and power supply to meet on the same schedule.
+</p>
+<p>For APAC’s next wave of AI infrastructure, the advantage will belong to companies that can bring reliable capacity online while keeping the cost and obligations of getting there under control.</p>
 <section class="sources" aria-labelledby="sources"><h2 id="sources" tabindex="-1">Sources</h2><p class="sources-intro">Public sources supporting the article. Publication dates are shown where available.</p><ol><li id="source-1" tabindex="-1"><span class="source-publisher">International Energy Agency</span><a class="source-title" href="https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary">Key Questions on Energy and AI: Executive summary</a><span class="source-detail">2026</span><a class="backref" href="#ref-1-1" aria-label="Return to citation 1">↑ Return to text</a></li>
 <li id="source-2" tabindex="-1"><span class="source-publisher">Amazon</span><a class="source-title" href="https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-2025-letter-to-shareholders">Andy Jassy’s 2025 Letter to Shareholders</a><span class="source-detail">2026</span><a class="backref" href="#ref-2-1" aria-label="Return to citation 2">↑ Return to text</a></li>
 <li id="source-3" tabindex="-1"><span class="source-publisher">International Energy Agency</span><a class="source-title" href="https://www.iea.org/reports/electricity-2026/grids">Electricity 2026: Grids</a><span class="source-detail">2026</span><a class="backref" href="#ref-3-1" aria-label="Return to citation 3">↑ Return to text</a></li>
