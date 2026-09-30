@@ -9,7 +9,7 @@ const formatDate = date => new Date(date+'T12:00:00Z').toLocaleDateString('en-GB
 const validDate = date => typeof date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(date) && !Number.isNaN(Date.parse(date)) && new Date(date).toISOString().slice(0,10) === date;
 for (const file of articles) {
   const name = file.slice(0,-3);
-  const md = fs.readFileSync(path.join(root,'content',file),'utf8');
+  const md = fs.readFileSync(path.join(root,'content',file),'utf8').replace(/\r\n?/g, '\n');
   const meta = JSON.parse(fs.readFileSync(path.join(root,'content',name+'.json'),'utf8'));
   if (!/^[a-z0-9-]+$/.test(meta.slug)) throw Error('Invalid article slug');
   if (!['draft','published'].includes(meta.status)) throw Error('Invalid publication status');
