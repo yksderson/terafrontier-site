@@ -80,3 +80,7 @@
  .sources li { break-inside: avoid; }
  .source-title::after { content: ' (' attr(href) ')'; font-size: 9pt; }
 }
+
+
+/* Article figures and comparisons */
+.article-figure{margin:2.25rem 0}.article-figure img{display:block;width:100%;height:auto;border-radius:4px}.article-figure figcaption,.article-table caption{font-size:.86rem;line-height:1.6;color:var(--muted,#aab6c7);text-align:left;margin-top:.8rem}.article-table-wrap{overflow-x:auto;margin:2rem 0}.article-table{width:100%;border-collapse:collapse;font-size:.95rem}.article-table caption{caption-side:top;margin:0 0 1rem}.article-table th,.article-table td{padding:.85rem;text-align:left;vertical-align:top;border:1px solid #344154}.article-table thead{background:#142235}.article-table tbody tr:nth-child(even){background:#0b1829}.article-table th{color:#e9e4da}

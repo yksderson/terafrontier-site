@@ -30,6 +30,18 @@ for (const file of articles) {
     return `<sup><a class="reference" role="doc-noteref" id="ref-${n}-${count}" href="#source-${n}" aria-label="Source ${n}: ${escape(meta.sources[n-1].publisher)}">[${n}]</a></sup>`;
   });
   const body = md.trim().split(/\n\s*\n/).slice(1).map(block => {
+    const figure = block.match(/^:::figure (\d+)$/);
+    if (figure) {
+      const f = meta.figures?.[Number(figure[1])-1];
+      if (!f || !/^\/assets\/[a-z0-9.-]+$/.test(f.src)) throw Error('Invalid figure');
+      return `<figure class="article-figure"><a href="${escape(f.src)}" aria-label="View full-size diagram"><img src="${escape(f.src)}" alt="${escape(f.alt)}" width="1536" height="1024" loading="lazy"></a><figcaption>${inline(f.caption)}</figcaption></figure>`;
+    }
+    const table = block.match(/^:::table (\d+)$/);
+    if (table) {
+      const t = meta.tables?.[Number(table[1])-1];
+      if (!t?.rows?.length) throw Error('Invalid table');
+      return `<div class="article-table-wrap" role="region" aria-label="Training and inference comparison" tabindex="0"><table class="article-table"><caption>${inline(t.caption)}</caption><thead><tr>${t.rows[0].map(c=>`<th scope="col">${escape(c)}</th>`).join('')}</tr></thead><tbody>${t.rows.slice(1).map(row=>`<tr>${row.map((c,i)=>i ? `<td>${inline(c)}</td>` : `<th scope="row">${escape(c)}</th>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+    }
     const h = block.match(/^(#{2,3}) (.+)$/);
     if (h) {
       const id = slugify(h[2]);
@@ -77,3 +89,4 @@ fs.mkdirSync(path.join(root,'research'),{recursive:true});
 fs.writeFileSync(path.join(root,'research/index.html'),archive);
 const urls = [{url:'https://terafrontier.com/'},{url:'https://terafrontier.com/research/'},...publishedArticles.map(a=>({url:`https://terafrontier.com/research/${a.slug}/`,modified:a.revisions?.at(-1)?.date || a.published}))];
 fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(u=>`<url><loc>${u.url}</loc>${u.modified ? `<lastmod>${u.modified}</lastmod>` : ''}</url>`).join('')}</urlset>\n`);
+

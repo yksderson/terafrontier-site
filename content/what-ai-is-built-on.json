@@ -1,0 +1,158 @@
+{
+  "slug": "what-ai-is-built-on",
+  "author": "Benoit Dubeau",
+  "description": "From chips and power to applications",
+  "status": "published",
+  "published": "2026-10-06",
+  "revisions": [],
+  "series": "ESSAY 02",
+  "topic": "THE AI STACK",
+  "sources": [
+    {
+      "publisher": "ASML",
+      "title": "How microchips are made. Undated.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://www.asml.com/en/technology/all-about-microchips/how-microchips-are-made",
+      "note": "Manufacturing overview and types of chipmakers. Supports fabrication and lithography basics, not current supply availability."
+    },
+    {
+      "publisher": "TSMC",
+      "title": "Advanced Packaging Services. Undated.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/services/advanced-packaging",
+      "note": "3DFabric and integration descriptions. Manufacturer explanation of packaging; no market-share or performance claim adopted."
+    },
+    {
+      "publisher": "NVIDIA",
+      "title": "GPU Performance Background User’s Guide. Technical reference.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html",
+      "note": "Sections 2–4, architecture, execution and performance. Supports parallel calculation and memory limits; older product benchmark numbers are excluded."
+    },
+    {
+      "publisher": "NVIDIA",
+      "title": "Understanding Your Grace-Blackwell Systems. Undated technical documentation.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://docs.nvidia.com/multi-node-nvlink-systems/multi-node-tuning-guide/system.html",
+      "note": "System architecture and networking. One documented platform, not a universal hardware layout."
+    },
+    {
+      "publisher": "NVIDIA",
+      "title": "Rubin platform announcement. 5 January 2026.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer",
+      "note": "Vera Rubin NVL72 composition: 72 GPUs and 36 CPUs. Announced manufacturer specification, not evidence of deployment or independent performance."
+    },
+    {
+      "publisher": "NVIDIA",
+      "title": "Hotter Than a Hot Tub. 21 June 2026.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
+      "note": "Cooling loops and climate qualifications. Vendor account; no promotional water, cost or efficiency ratios adopted."
+    },
+    {
+      "publisher": "IEA",
+      "title": "Key Questions on Energy and AI. 2026.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+      "note": "Executive summary, demand outlook and value-chain constraints. 485 TWh is the 2025 global data center estimate; 950 TWh is the 2030 central projection. Includes non-AI workloads. Does not identify a particular site’s limiting factor."
+    },
+    {
+      "publisher": "AWS",
+      "title": "What is Amazon EC2. Undated technical documentation.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
+      "note": "Instances and resource configurations. Illustrates infrastructure access, not a comparison of cloud providers."
+    },
+    {
+      "publisher": "AWS",
+      "title": "Real-time inference. Undated technical documentation.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html",
+      "note": "Managed hosting endpoints and autoscaling. Supports the division of responsibilities; no pricing or service-performance claim adopted."
+    },
+    {
+      "publisher": "Google",
+      "title": "Introduction to Large Language Models. Updated 9 January 2026.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://developers.google.com/machine-learning/crash-course/llm",
+      "note": "Introductory definitions of language models, tokens and parameters. Conceptual reference, not evidence of model quality."
+    },
+    {
+      "publisher": "Google",
+      "title": "LLMs What is a large language model. Technical lesson.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://developers.google.com/machine-learning/crash-course/llm/transformers",
+      "note": "Architecture, training, generation and limitations. The article uses broad concepts without treating the lesson’s full-transformer example as universal."
+    },
+    {
+      "publisher": "AWS",
+      "title": "Retrieve data and generate AI responses with Amazon Bedrock Knowledge Bases. Undated technical documentation.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html",
+      "note": "Retrieval, context augmentation and references. Documents features, not a guarantee of answer accuracy."
+    },
+    {
+      "publisher": "US DOE and NREL",
+      "title": "Best Practices Guide for Energy-Efficient Data Center Design. Revised July 2024.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://www.energy.gov/sites/default/files/2024-07/best-practice-guide-data-center-design_0.pdf",
+      "note": "Sections 5.1–5.6, 6 and 8, including evaporative and dry heat rejection, climate conditions, electrical systems and benchmarking. Rechecked 5 October 2026; no current numerical benchmarks adopted."
+    },
+    {
+      "publisher": "Anthropic",
+      "title": "Building effective agents. 19 December 2024.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "note": "Distinguishes predefined workflows from model-directed tool use. Used for a stable architectural distinction, not current product capabilities."
+    },
+    {
+      "publisher": "OpenAI",
+      "title": "Code generation. Live technical documentation, accessed 5 October 2026.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://developers.openai.com/api/docs/guides/code-generation",
+      "note": "Describes Codex as a coding agent and distinguishes it from models integrated into applications. No performance or pricing claim adopted."
+    },
+    {
+      "publisher": "Anthropic",
+      "title": "Enabling Claude Code to work more autonomously. 29 September 2025.",
+      "date": "Accessed 5 October 2026",
+      "url": "https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously",
+      "note": "Describes coding tools, context management and permissions around the model. Supports the product architecture; the discussion of future interfaces and outcome-based pricing is an open question, not a vendor forecast."
+    }
+  ],
+  "figures": [
+    {
+      "src": "/assets/ai-stack.webp",
+      "alt": "AI stack with arrows from semiconductor supply and power facilities through computing systems, operating software, models and applications; data supports models and applications.",
+      "caption": "Figure 1. Simplified dependencies behind a hosted AI application. Read from the physical foundations upward. Arrows show dependencies, not the sequence of a user request. Data supports training and application context; cloud services provide access across several layers. Schematic based on [^2] [^4] [^8] [^9] [^10] [^11] [^12]."
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Table 1. Training and inference perform different jobs [^10] [^11]. Their total cost and energy use depend on the workload and how much each activity is performed.",
+      "rows": [
+        [
+          "",
+          "Training",
+          "Inference"
+        ],
+        [
+          "Purpose",
+          "Learn or adapt model parameters",
+          "Apply the trained model to new inputs"
+        ],
+        [
+          "Parameters",
+          "Updated through learning",
+          "Normally fixed while serving requests"
+        ],
+        [
+          "Work delivered",
+          "A trained or adapted model",
+          "An answer, prediction or other output"
+        ]
+      ]
+    }
+  ]
+}
