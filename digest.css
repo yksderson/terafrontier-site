@@ -1,3 +1,8 @@
+/* Keep Digest content on the same edges as the site header and footer. */
+.research-archive.digest-archive { width: min(var(--max), calc(100% - 112px)); max-width: none; padding: 70px 0 80px; }
+@media(max-width:900px) { .research-archive.digest-archive { width: calc(100% - 64px); } }
+@media(max-width:600px) { .research-archive.digest-archive { width: calc(100% - 40px); padding: 38px 0 60px; } }
+
 .digest-archive > header .button { margin-top: 12px; }
 .digest-delivery { font-size: 13px; margin-top: 14px; }
 .digest-coverage { margin: 50px 0 56px; padding: 28px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
