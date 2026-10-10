@@ -7,7 +7,7 @@
 .article-meta a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
 .revision-history { border-top: 1px solid var(--line); margin-top: 48px; }
 .revision-history li { color: var(--muted); font-size: 15px; line-height: 1.7; padding-bottom: 12px; }
-.research-archive { max-width: 1000px; margin: 0 auto; padding: 70px 32px 80px; }
+.research-archive { width: min(var(--max), calc(100% - 112px)); max-width: none; margin: 0 auto; padding: 70px 0 80px; }
 .research-archive h1 { font-size: clamp(44px,6vw,72px); }
 .essay-list { padding: 0; margin: 48px 0; list-style: none; }
 .essay-card { border-top: 1px solid var(--line); padding: 30px 0; }
@@ -17,7 +17,8 @@
 .essay-card .back-link { color: var(--gold); }
 .archive-subscribe { border-top: 1px solid var(--line); padding-top: 40px; }
 .archive-subscribe h2 { font-size: 30px; }
-@media(max-width:600px) { .research-archive { padding: 38px 20px 60px; } }
+@media(max-width:900px) { .research-archive { width: calc(100% - 64px); } }
+@media(max-width:600px) { .research-archive { width: calc(100% - 40px); padding: 38px 0 60px; } }
 .reading-layout { display: grid; grid-template-columns: 220px minmax(0, 710px); gap: 66px; max-width: 1060px; margin: 0 auto; padding: 36px 32px 80px; border-top: 1px solid var(--line); }
 .contents { align-self: start; position: sticky; top: 32px; }
 .contents ol { list-style: none; padding: 0; margin: 18px 0; }
