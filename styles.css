@@ -527,3 +527,7 @@ footer {
 
 
 .subscription-note { font-size: 13px; color: var(--muted); line-height: 1.65; }
+.nav nav { flex-wrap: wrap; }
+.nav nav a { min-height: 44px; display: inline-flex; align-items: center; }
+.workspace-links { grid-template-columns: repeat(2,minmax(0,1fr)); }
+@media(max-width:600px) { .workspace-links { grid-template-columns: 1fr; } }

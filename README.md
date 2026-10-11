@@ -1,31 +1,25 @@
-# TeraFrontier Website V0.1
+# TeraFrontier website
 
-This is intentionally a simple static site: HTML + CSS only.
+Public research, publication status and links to the private Solar and Intelligence Lab workspaces. The site is static HTML and CSS. GitHub stores the source; the existing Cloudflare Pages integration publishes main.
 
-## Run locally
-Serve the repository root with any static HTTP server, then open its local address. Run `node build.cjs` after editing source templates or articles, then `node serve.cjs` for the preview.
+## Work locally
+
+Use Node.js 24 and pnpm 11.25.0, matching the application repositories.
+
+1. Run `pnpm install --frozen-lockfile`.
+2. Run `pnpm build` after editing article content or the shared article renderer.
+3. Run `pnpm test` to check navigation, internal links, assets, anchors and text encoding.
+4. Run `pnpm preview` and open http://127.0.0.1:4174/.
+5. Review desktop and mobile layouts. Commit generated pages with their source.
 
 ## Publish
-1. Create a GitHub repository named `terafrontier-site`.
-2. Upload all files in this folder.
-3. In Cloudflare, create a Pages project from the GitHub repository.
-4. Production branch: `main`
-5. Build command: `exit 0`
-6. Build output directory: `.` (the repository root)
-7. After the first deployment, attach `terafrontier.com` under Custom domains.
 
-## Before launch
-The subscription button links to TeraFrontier on Substack. The footer links to the supplied Substack, X, LinkedIn, and Instagram profiles. The first essay is published, with a Research archive, numbered sources, and publication/revision dates.
+Use a review branch and pull request in yksderson/terafrontier-site. Merging into main triggers the existing Pages deployment; a separate Pages project is unnecessary. Confirm the deployed pages after release. The verification workflow checks generated content and links; it does not change the deployment integration.
 
-## Assets and layout
+The website needs no database. Private application records, credentials, screenshots and customer evidence do not belong in this public repository.
 
-All four supplied PNG brand assets are preserved unchanged. The hero uses the generated `assets/space-hero-v2.jpg` background (approximately 97 KB). All three displayed emblems use `assets/terafrontier-emblem-web.png`, a transparent display copy, with a shared warm-gold treatment and soft fade. Generation prompts are retained alongside the assets. No external fonts, JavaScript, frameworks, are required in the browser.
+## Content and design
 
-The page uses a space-banner hero fading into navy, a featured essay, an open research index, an about section, and a publication status. Navigation remains visible on mobile. Keyboard users have a skip link and explicit focus outlines.
+See [PUBLISHING.md](PUBLISHING.md) for essays and revision records. The Digest page states its current publication status. Workspace links require sign-in; preliminary screening does not establish project feasibility or available utility capacity.
 
-## Design principle
-Delete before adding. Keep the site sparse, dark, fast, and serious.
-
-
-## Articles
-See [PUBLISHING.md](PUBLISHING.md) for adding essays and recording revisions. Run `node build.cjs` after editing content and commit the generated pages. The deployed website remains static.
+Preserve the existing brand assets and dark, sparse layout. Keep copy concrete and navigation usable by keyboard and touch. Avoid claiming a planned feature or publication is already available.

@@ -1,0 +1,7 @@
+{
+  "name":"terafrontier-site",
+  "private":true,
+  "packageManager":"pnpm@11.25.0",
+  "engines":{"node":">=24 <25"},
+  "scripts":{"build":"node build.cjs","test":"node check-site.cjs && node scripts/check-site.cjs","preview":"node serve.cjs"}
+}
