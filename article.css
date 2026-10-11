@@ -85,3 +85,14 @@
 
 /* Article figures and comparisons */
 .article-figure{margin:2.25rem 0}.article-figure img{display:block;width:100%;height:auto;border-radius:4px}.article-figure figcaption,.article-table caption{font-size:.86rem;line-height:1.6;color:var(--muted,#aab6c7);text-align:left;margin-top:.8rem}.article-table-wrap{overflow-x:auto;margin:2rem 0}.article-table{width:100%;border-collapse:collapse;font-size:.95rem}.article-table caption{caption-side:top;margin:0 0 1rem}.article-table th,.article-table td{padding:.85rem;text-align:left;vertical-align:top;border:1px solid #344154}.article-table thead{background:#142235}.article-table tbody tr:nth-child(even){background:#0b1829}.article-table th{color:#e9e4da}
+
+/* Native disclosure keeps the mobile contents compact without JavaScript. */
+.contents-mobile { display: none; }
+.subscription-note { font-size: 13px; color: var(--muted); line-height: 1.65; }
+.article-body .subscription-note { font-size: 13px; }
+@media (max-width: 900px) {
+  .contents-desktop { display: none; }
+  .contents-mobile { display: block; }
+  .contents-mobile summary { cursor: pointer; color: var(--gold); padding: 12px 0; font-size: 13px; }
+  .contents-mobile summary:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+}

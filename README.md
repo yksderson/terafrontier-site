@@ -3,7 +3,7 @@
 This is intentionally a simple static site: HTML + CSS only.
 
 ## Run locally
-Serve the repository root with any static HTTP server, then open its local address. No build step is required.
+Serve the repository root with any static HTTP server, then open its local address. Run `node build.cjs` after editing source templates or articles, then `node serve.cjs` for the preview.
 
 ## Publish
 1. Create a GitHub repository named `terafrontier-site`.
@@ -19,7 +19,7 @@ The subscription button links to TeraFrontier on Substack. The footer links to t
 
 ## Assets and layout
 
-All four supplied PNG brand assets are preserved unchanged. The hero uses the generated `assets/space-hero-v2.jpg` background (approximately 97 KB). All three displayed emblems use `assets/terafrontier-emblem-web.png`, a transparent display copy, with a shared warm-gold treatment and soft fade. Generation prompts are retained alongside the assets. No external fonts, JavaScript, frameworks, or build step are required.
+All four supplied PNG brand assets are preserved unchanged. The hero uses the generated `assets/space-hero-v2.jpg` background (approximately 97 KB). All three displayed emblems use `assets/terafrontier-emblem-web.png`, a transparent display copy, with a shared warm-gold treatment and soft fade. Generation prompts are retained alongside the assets. No external fonts, JavaScript, frameworks, are required in the browser.
 
 The page uses a space-banner hero fading into navy, a featured essay, an open research index, an about section, and a publication status. Navigation remains visible on mobile. Keyboard users have a skip link and explicit focus outlines.
 

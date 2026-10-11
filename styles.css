@@ -525,3 +525,5 @@ footer {
   .hero-emblem { opacity: .85; }
 }
 
+
+.subscription-note { font-size: 13px; color: var(--muted); line-height: 1.65; }
