@@ -1,0 +1,14 @@
+.git/
+.github/
+node_modules/
+content/
+templates/
+scripts/
+*.cjs
+*.mjs
+*.json
+*.jsonc
+*.md
+*.yaml
+*.yml
+.env*
