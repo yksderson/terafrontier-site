@@ -6,8 +6,9 @@ const pages=['index.html','research/index.html','digest/index.html','research/wh
 let checked=0;
 for(const page of pages){
   const html=fs.readFileSync(path.join(root,page),'utf8');
-  assert.ok(html.includes('https://solar.terafrontier.com/'),`${page}: Solar navigation`);
-  assert.ok(html.includes('https://lab.terafrontier.com/'),`${page}: Lab navigation`);
+  assert.ok(!html.includes('>Solar</a>'),`${page}: unannounced Solar link`);
+  assert.ok(html.includes('href="/login/"'),`${page}: login navigation`);
+  assert.ok(!html.includes('Intelligence Lab'),`${page}: unannounced Lab`);
   assert.ok(!/[ÂÃ]/.test(html),`${page}: UTF-8 text`);
   for(const match of html.matchAll(/<(?:a|img|link)\b[^>]*\b(?:href|src)="([^"]+)"/g)){
     const ref=match[1];assert.ok(!/^(javascript|data):/i.test(ref));

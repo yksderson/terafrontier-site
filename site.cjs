@@ -4,7 +4,7 @@ const launchNote = 'Essays are available now. The weekly Digest is coming soon. 
 const socials = [['Substack','https://terafrontier.substack.com/'],['X','https://x.com/terafrontier'],['LinkedIn','https://www.linkedin.com/company/terafrontier/'],['Instagram','https://www.instagram.com/terafrontier']];
 const footer = `<footer><span>© TeraFrontier · Benoit Dubeau</span><nav class="social-links" aria-label="TeraFrontier on other platforms">${socials.map(([name,url])=>`<a href="${url}">${name}</a>`).join('')}</nav></footer>`;
 function header(current = '') {
-  const links = [['Research','/research/'],['Digest','/digest/'],['Solar','https://solar.terafrontier.com/'],['Intelligence Lab','https://lab.terafrontier.com/'],['About','/#about'],['Subscribe','/#subscribe']];
+  const links = [['Research','/research/'],['Digest','/digest/'],['About','/#about'],['Subscribe','/#subscribe'],['Log in','/login/']];
   return `<header class="nav"><a class="brand" href="/" aria-label="TeraFrontier home"><span class="brand-mark" aria-hidden="true"></span><span>TERAFRONTIER</span></a><nav aria-label="Main navigation">${links.map(([label,url])=>`<a href="${url}"${label==='Subscribe'?' class="nav-cta"':''}${label===current?' aria-current="page"':''}>${label}</a>`).join('')}</nav></header>`;
 }
 function finish(html, current = '') {
