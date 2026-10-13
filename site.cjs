@@ -1,6 +1,6 @@
 const escape = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const subscription = 'Research essays and a weekly APAC digest, delivered free by email.';
-const launchNote = 'Essays are available now. The weekly Digest is coming soon. One Substack subscription covers both.';
+const launchNote = 'One free Substack subscription covers Research and the weekly Digest.';
 const socials = [['Substack','https://terafrontier.substack.com/'],['X','https://x.com/terafrontier'],['LinkedIn','https://www.linkedin.com/company/terafrontier/'],['Instagram','https://www.instagram.com/terafrontier']];
 const footer = `<footer><span>© TeraFrontier · Benoit Dubeau</span><nav class="social-links" aria-label="TeraFrontier on other platforms">${socials.map(([name,url])=>`<a href="${url}">${name}</a>`).join('')}</nav></footer>`;
 function header(current = '') {
